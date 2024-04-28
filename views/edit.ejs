@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+  <div class="main w-full h-screen bg-zinc-800">
+    <div class="form p-3 text-white">
+      <form action="/edit" method="post">
+        <input class="w-full px-5 py-2 rounded-md outline-none bg-zinc-700" type="text" placeholder="File name" name="title" value="<%= filename %>">
+        <textarea class="w-full px-5 py-1 rounded-md outline-none bg-zinc-700 resize-none mt-3" placeholder="Write details in file" name="details"> <%= fileData%> </textarea>
+        <!-- <input class="px-10 py-2 tracking-tighter mt-5 bg-teal-900 rounded-md outline-none" type="submit" placeholder="update"> -->
+        <button class="px-10 py-2 tracking-tighter mt-5 bg-teal-800 rounded-md ">update</button>
+      </form>
+    </div>
+    
+  </div>
+  
+</body>
+</html>
